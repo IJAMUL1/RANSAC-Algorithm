@@ -46,7 +46,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Open3D development team
 - Inspired by [RANSAC algorithm](https://en.wikipedia.org/wiki/Random_sample_consensus)
-
-## Contact
-
-For any questions or suggestions, feel free to contact [your_email@example.com](mailto:your_email@example.com).
