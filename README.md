@@ -6,6 +6,39 @@ This project demonstrates fitting a plane to a point cloud using a RANSAC-based 
 
 This Python project utilizes the Open3D library to read point cloud data and fit a plane to it using an adaptive RANSAC algorithm. The fitted plane is visualized alongside the original point cloud with colored inliers.
 
+## RANSAC Algorithm
+
+The RANSAC (Random Sample Consensus) algorithm is a robust method for estimating parameters of a mathematical model from a set of observed data that may contain outliers. In the context of plane fitting to a point cloud, RANSAC iteratively samples subsets of points to estimate candidate planes and identifies the best-fitting plane based on the number of inliers.
+
+# Core RANSAC Steps
+
+## Sample Selection
+- The `fit_plane_adaptive` function iteratively selects three random points from the point cloud to define a potential plane.
+
+## Model Fitting
+- Using the sampled points, the `plane_equation_from_points` function calculates the plane equation with coefficients (a, b, c, d).
+
+## Inlier Determination
+- The `is_inlier` function checks how many points in the point cloud lie within a `distance_threshold` of the calculated plane, considering them as inliers.
+
+## Consensus Evaluation
+- If the number of inliers for the current plane exceeds any previously found plane, it is stored as the `best_plane`.
+
+## Iteration Update
+- The algorithm dynamically adjusts the number of iterations needed (`N`) based on the proportion of inliers found in each iteration, improving efficiency.
+
+## Termination
+- The loop continues until the iteration count exceeds the calculated `N`.
+
+# Additional Notes
+
+- **Adaptive Nature**: This RANSAC implementation adapts the number of iterations dynamically based on inlier support, enhancing efficiency.
+  
+- **Distance Threshold**: The `distance_threshold` parameter determines the strictness of inlier determination.
+
+- **Return Value**: The `fit_plane_adaptive` function returns the `best_plane` with the highest inlier support found during the RANSAC iterations.
+
+
 ## Installation
 
 1. Ensure you have Python installed on your system.
