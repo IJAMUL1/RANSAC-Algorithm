@@ -19,7 +19,7 @@ This Python project utilizes the Open3D library to read point cloud data and fit
 1. Clone this repository to your local machine.
 2. Run the `plane_fitting.py` script using Python:
     ```
-    python plane_fitting.py
+    python ransac_algorithm.py
     ```
 
 ## Functionality
@@ -35,8 +35,11 @@ This Python project utilizes the Open3D library to read point cloud data and fit
 - **p**: Confidence level for RANSAC termination criterion.
 
 ## Example
+*Initial point cloud*
+![initial point cloud](https://github.com/IJAMUL1/RANSAC-Point-Cloud-Plane-Fitting/assets/60096099/51413d48-f8c2-49a1-bb31-5afd42601488)
 
-![Example](example.png)
+*point cloud after fitting*
+![point cloud best plane](https://github.com/IJAMUL1/RANSAC-Point-Cloud-Plane-Fitting/assets/60096099/d0935b4a-a7fb-4a56-8682-3c81506222e3)
 
 ## Acknowledgments
 
