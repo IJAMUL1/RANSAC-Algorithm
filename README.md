@@ -38,10 +38,6 @@ This Python project utilizes the Open3D library to read point cloud data and fit
 
 ![Example](example.png)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Open3D development team
