@@ -71,10 +71,10 @@ The RANSAC (Random Sample Consensus) algorithm is a robust method for estimating
 *Initial point cloud*
 ![initial point cloud](https://github.com/IJAMUL1/RANSAC-Point-Cloud-Plane-Fitting/assets/60096099/51413d48-f8c2-49a1-bb31-5afd42601488)
 
-*point cloud after fitting*
+*point cloud result after fitting*
 ![point cloud best plane](https://github.com/IJAMUL1/RANSAC-Point-Cloud-Plane-Fitting/assets/60096099/d0935b4a-a7fb-4a56-8682-3c81506222e3)
 
 ## Acknowledgments
 
-- Open3D development team
+- Open3D development team [Open3d Github](https://github.com/isl-org/Open3D)
 - Inspired by [RANSAC algorithm](https://en.wikipedia.org/wiki/Random_sample_consensus)
